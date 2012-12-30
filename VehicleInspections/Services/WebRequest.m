@@ -10,6 +10,8 @@
 
 @property (nonatomic,strong)NSURLConnection *connection;
 
+@property(nonatomic, readwrite) BOOL busy;
+
 -(WebResponse *)asResponse;
 @end
 
@@ -22,6 +24,8 @@
 @synthesize response = _response;
 @synthesize connection = _connection;
 
+@synthesize busy = _busy;
+
 - (id)initWithUrl:(NSURL *)url andDelegate:(NSObject <WebRequestDelegate> *)delegate
 {
     if (!url || !delegate)
@@ -30,6 +34,7 @@
     self = [super init];
     if (self)
     {
+        self.busy = NO;
         self.url = url;
         self.delegate = delegate;
     }
@@ -39,17 +44,20 @@
 - (void)issueRequest
 {
     self.inner = [[NSURLRequest alloc] initWithURL:self.url];
+    self.busy = YES;
     self.connection = [[NSURLConnection alloc] initWithRequest:self.inner delegate:self];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     [self.delegate requestFailed:self withError:error andResponse:[self asResponse]];
+    self.busy = NO;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     [self.delegate requestSucceeded:self withResponse:[self asResponse]];
+    self.busy = NO;
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data

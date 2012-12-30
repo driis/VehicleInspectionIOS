@@ -9,7 +9,7 @@
 
 @interface WebRequest : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 @property(nonatomic, strong, readonly) NSURL* url;
-
+@property(nonatomic, readonly) BOOL busy;
 - (id) initWithUrl:(NSURL *)url andDelegate:(NSObject<WebRequestDelegate> *)delegate;
 - (void) issueRequest;
 
