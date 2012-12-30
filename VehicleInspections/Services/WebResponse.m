@@ -5,4 +5,6 @@
 {
 
 }
+@synthesize body = _body;
+@synthesize innerResponse = _innerResponse;
 @end
