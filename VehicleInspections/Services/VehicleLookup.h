@@ -1,10 +1,11 @@
 #import <Foundation/Foundation.h>
+#import "WebRequest.h"
 
 @class Vehicle;
 
 
-@interface VehicleLookup : NSObject
+@interface VehicleLookup : NSObject<WebRequestDelegate>
 
-- (Vehicle*) vehicleByRegistration:(NSString *)registrationNumber;
+- (void)vehicleByRegistration:(NSString *)registrationNumber callback:(void(^)(Vehicle *))block;
 
 @end

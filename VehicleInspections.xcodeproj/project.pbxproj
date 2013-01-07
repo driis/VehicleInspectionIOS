@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B69804DEFC834736BF3E760 /* VehicleLookupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6987817BB3DFB677A3BC7C /* VehicleLookupTests.m */; };
 		5B69806EEB99AFA075C57DFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B69891CFDF5F585A4F0B9D9 /* InfoPlist.strings */; };
 		5B6981411ACF808559BA47C4 /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980DF662100D485FEDD25 /* WebResponse.m */; };
 		5B6981C71E67377829EB46B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B69855F31A9F3F18355EA77 /* Foundation.framework */; };
@@ -60,6 +61,7 @@
 		5B6986E6C28F90567CA020F2 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		5B698726D3C11E3C22AF1315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B69872911238812BC31F6BC /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
+		5B6987817BB3DFB677A3BC7C /* VehicleLookupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleLookupTests.m; sourceTree = "<group>"; };
 		5B698818DFDBA1D4E74EF45D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5B69883B93FF3AB87213D65F /* VehicleInspectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspectionsTests-Info.plist"; sourceTree = "<group>"; };
 		5B6989090C6ACEDFF2C64669 /* VehicleInspectionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehicleInspectionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				5B698E6179AB8F5EB8857424 /* WebRequestTests.m */,
 				5B69872911238812BC31F6BC /* TestHelper.m */,
 				5B6980E6855FB4C5554DA68B /* TestHelper.h */,
+				5B6987817BB3DFB677A3BC7C /* VehicleLookupTests.m */,
 			);
 			path = VehicleInspectionsTests;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				5B698CA418B0D4DEF75EEC59 /* WebResponse.m in Sources */,
 				5B69853FDBA213B507D76A38 /* WebRequestTests.m in Sources */,
 				5B69844A2AEC3CC01450DF31 /* TestHelper.m in Sources */,
+				5B69804DEFC834736BF3E760 /* VehicleLookupTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

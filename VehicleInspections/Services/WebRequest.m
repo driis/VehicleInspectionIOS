@@ -12,6 +12,8 @@
 
 @property(nonatomic, readwrite) BOOL busy;
 
+@property(nonatomic, retain, readwrite) NSMutableDictionary* state;
+
 -(WebResponse *)asResponse;
 @end
 
@@ -26,6 +28,8 @@
 
 @synthesize busy = _busy;
 
+@synthesize state = _state;
+
 - (id)initWithUrl:(NSURL *)url andDelegate:(NSObject <WebRequestDelegate> *)delegate
 {
     if (!url || !delegate)
@@ -37,6 +41,7 @@
         self.busy = NO;
         self.url = url;
         self.delegate = delegate;
+        self.state = [NSMutableDictionary new];
     }
     return self;
 }
