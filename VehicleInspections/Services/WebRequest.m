@@ -90,6 +90,7 @@
 + (WebRequest *)issueRequestForUrl:(NSURL *)url andDelegate:(NSObject <WebRequestDelegate> *)delegate
 {
     WebRequest * request = [[WebRequest alloc] initWithUrl:url andDelegate:delegate];
+    [request issueRequest];
     return request;
 }
 

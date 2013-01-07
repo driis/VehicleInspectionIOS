@@ -3,15 +3,8 @@
 
 @implementation TestHelper
 {
-
-}
-+ (void)waitInRunLoopWhile:(BOOL(^))predicate
-{
-
 }
 
-
-/*
 + (void)waitInRunLoopWhile:(BOOL(^)())predicate
 {
     NSRunLoop * loop = [NSRunLoop mainRunLoop];
@@ -20,5 +13,5 @@
         [loop runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:500]];
     }
 }
-  */
+
 @end
