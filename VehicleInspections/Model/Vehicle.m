@@ -15,4 +15,10 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"VIN %@", self.vin];
+}
+
+
 @end
