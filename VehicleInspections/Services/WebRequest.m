@@ -48,7 +48,9 @@
 
 - (void)issueRequest
 {
-    self.inner = [[NSURLRequest alloc] initWithURL:self.url];
+    NSMutableURLRequest * request;
+    self.inner = request = [[NSMutableURLRequest alloc] initWithURL:self.url];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     self.busy = YES;
     self.connection = [[NSURLConnection alloc] initWithRequest:self.inner delegate:self];
 }
