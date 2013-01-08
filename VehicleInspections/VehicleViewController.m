@@ -1,6 +1,7 @@
 #import "VehicleViewController.h"
 #import "VehicleLookup.h"
 #import "Vehicle.h"
+#import "InspectionsTableViewController.h"
 
 
 @interface VehicleViewController()
@@ -39,7 +40,7 @@
 
 - (void)showSpinner
 {
-    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     self.spinner.center = self.view.center;
     [self.view addSubview:self.spinner];
     [self.spinner startAnimating];
@@ -51,6 +52,10 @@
     self.vinLabel.text = self.vehicle.vin;
     self.makeLabel.text = self.vehicle.make;
     self.modelLabel.text = self.vehicle.model;
+    id delegate = [[InspectionsTableViewController alloc] initWithVehicle:self.vehicle];
+    [self.tableView setDelegate:delegate];
+    [self.tableView setDataSource:delegate];
+    [self.tableView reloadData];
     if (self.spinner)
     {
         [self.spinner stopAnimating];

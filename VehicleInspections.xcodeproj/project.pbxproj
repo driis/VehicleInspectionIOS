@@ -11,6 +11,7 @@
 		5B69806EEB99AFA075C57DFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B69891CFDF5F585A4F0B9D9 /* InfoPlist.strings */; };
 		5B6981411ACF808559BA47C4 /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980DF662100D485FEDD25 /* WebResponse.m */; };
 		5B6981C71E67377829EB46B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B69855F31A9F3F18355EA77 /* Foundation.framework */; };
+		5B6981D858F1DE6511810921 /* InspectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698BC0AD44906211D06D58 /* InspectionsTableViewController.m */; };
 		5B6981DBCA0E59B6D31984B2 /* VehicleLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69833383E7D1A241BF9927 /* VehicleLookup.m */; };
 		5B698349277CE8F4C73F22CB /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */; };
 		5B6983CE38C11B1C685C63B8 /* VehicleInspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6982834EECC53CDF274BDF /* VehicleInspection.m */; };
@@ -35,6 +36,7 @@
 		5B698D2D9B668888A4D704F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698569CDA220F208EE3236 /* ViewController.m */; };
 		5B698D8E3974B7DF3B6FBE71 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986E6C28F90567CA020F2 /* Vehicle.m */; };
 		5B698DF7E88F8C6B66D54155 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6984F69D7651E53847C99C /* UIKit.framework */; };
+		5B698E921753ED262CC37883 /* InspectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698BC0AD44906211D06D58 /* InspectionsTableViewController.m */; };
 		5B698F4DEC8A83B70850121B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B698ADB5926ACEF4C58BCB4 /* MainStoryboard_iPhone.storyboard */; };
 		5B698F8D540E9D1B5B7A8C3C /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986E6C28F90567CA020F2 /* Vehicle.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,7 @@
 		5B69808E38AE02FF0A4AD17F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B6980DF662100D485FEDD25 /* WebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponse.m; sourceTree = "<group>"; };
 		5B6980E6855FB4C5554DA68B /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
+		5B6981478CD5010859B81933 /* InspectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionsTableViewController.h; sourceTree = "<group>"; };
 		5B6982043C24019FAE2A253B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5B6982834EECC53CDF274BDF /* VehicleInspection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleInspection.m; sourceTree = "<group>"; };
 		5B698296D46C8EDACD381CBE /* VehicleInspections-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspections-Info.plist"; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		5B698ABF936FC7C62220B4EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5B698B38575EAF73ECD7BD4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B698B4401217D23CA551461 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5B698BC0AD44906211D06D58 /* InspectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionsTableViewController.m; sourceTree = "<group>"; };
 		5B698C1BF41996FB6FCC43BB /* VehicleInspections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleInspections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B698CCFF358D01E858E39C6 /* WebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequest.m; sourceTree = "<group>"; };
 		5B698D2A6A944F9ACA7A9356 /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequest.h; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				5B6981A77E001523EE8F1403 /* Services */,
 				5B698F6431FB9F2854D3ECF0 /* Model */,
 				5B698116B47100E930B2BC6D /* Categories */,
+				5B698BC0AD44906211D06D58 /* InspectionsTableViewController.m */,
+				5B6981478CD5010859B81933 /* InspectionsTableViewController.h */,
 			);
 			path = VehicleInspections;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				5B6981411ACF808559BA47C4 /* WebResponse.m in Sources */,
 				5B698BB79CF5A7682C0E3177 /* VehicleInspection.m in Sources */,
 				5B698349277CE8F4C73F22CB /* NSArray+Map.m in Sources */,
+				5B698E921753ED262CC37883 /* InspectionsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +364,7 @@
 				5B69804DEFC834736BF3E760 /* VehicleLookupTests.m in Sources */,
 				5B6983CE38C11B1C685C63B8 /* VehicleInspection.m in Sources */,
 				5B69885D7B30F0318CC3C5F6 /* NSArray+Map.m in Sources */,
+				5B6981D858F1DE6511810921 /* InspectionsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
