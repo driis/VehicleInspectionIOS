@@ -1,13 +1,20 @@
+#import <CoreGraphics/CoreGraphics.h>
 #import "InspectionsTableViewController.h"
 #import "Vehicle.h"
 #import "VehicleInspection.h"
+#import "InspectionTableViewCell.h"
 
+
+@interface InspectionsTableViewController()
+@property (nonatomic,strong)NSDateFormatter *dateFormatter;
+@end
 
 @implementation InspectionsTableViewController
 {
 
 }
 @synthesize vehicle = _vehicle;
+@synthesize dateFormatter = _dateFormatter;
 
 - (id)initWithVehicle:(Vehicle *)vehicle
 {
@@ -15,6 +22,8 @@
     if (self)
     {
         self.vehicle = vehicle;
+        self.dateFormatter = [[NSDateFormatter alloc] init];
+        self.dateFormatter.dateFormat = @"dd/MM yyyy";
     }
 
     return self;
@@ -31,11 +40,14 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"inspectionCell"];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"inspectionCell"];
+        cell = [[InspectionTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"inspectionCell"];
     }
 
-    cell.textLabel.text = inspection.result;
-    cell.detailTextLabel.text = [inspection.mileage stringByAppendingString:@" km"];
+    NSString *dateString = [self.dateFormatter stringFromDate:inspection.date];
+
+    cell.textLabel.text = [NSString stringWithFormat:@"%@: %@", dateString, inspection.result];
+    NSString *detailText = [NSString stringWithFormat:@"%@ km", inspection.mileage];
+    cell.detailTextLabel.text = detailText;
     return cell;
 }
 

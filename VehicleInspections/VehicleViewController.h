@@ -2,6 +2,7 @@
 
 @class VehicleLookup;
 @class Vehicle;
+@class InspectionsTableViewController;
 
 
 @interface VehicleViewController : UIViewController

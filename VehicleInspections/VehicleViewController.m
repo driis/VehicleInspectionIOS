@@ -7,6 +7,7 @@
 @interface VehicleViewController()
 @property (nonatomic,strong)VehicleLookup *lookup;
 @property (nonatomic,strong)UIActivityIndicatorView *spinner;
+@property (nonatomic,strong)InspectionsTableViewController *tableViewDelegate;
 @end
 
 @implementation VehicleViewController
@@ -20,6 +21,8 @@
 @synthesize modelLabel = _modelLabel;
 @synthesize makeLabel = _makeLabel;
 @synthesize tableView = _tableView;
+
+@synthesize tableViewDelegate = _tableViewDelegate;
 
 - (void)viewDidLoad
 {
@@ -52,9 +55,9 @@
     self.vinLabel.text = self.vehicle.vin;
     self.makeLabel.text = self.vehicle.make;
     self.modelLabel.text = self.vehicle.model;
-    id delegate = [[InspectionsTableViewController alloc] initWithVehicle:self.vehicle];
-    [self.tableView setDelegate:delegate];
-    [self.tableView setDataSource:delegate];
+    self.tableViewDelegate = [[InspectionsTableViewController alloc] initWithVehicle:self.vehicle];
+    [self.tableView setDelegate:self.tableViewDelegate];
+    [self.tableView setDataSource:self.tableViewDelegate];
     [self.tableView reloadData];
     if (self.spinner)
     {
