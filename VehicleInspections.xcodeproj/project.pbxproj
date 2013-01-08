@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245EB023169CC6CE008DB950 /* iPhoneIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 245EB022169CC6CE008DB950 /* iPhoneIcon_Big.png */; };
+		245EB025169CC6D1008DB950 /* iPhoneIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 245EB024169CC6D1008DB950 /* iPhoneIcon_Small.png */; };
 		5B69804DEFC834736BF3E760 /* VehicleLookupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6987817BB3DFB677A3BC7C /* VehicleLookupTests.m */; };
 		5B69806EEB99AFA075C57DFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B69891CFDF5F585A4F0B9D9 /* InfoPlist.strings */; };
 		5B6981411ACF808559BA47C4 /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980DF662100D485FEDD25 /* WebResponse.m */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		245EB022169CC6CE008DB950 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Big.png; sourceTree = "<group>"; };
+		245EB024169CC6D1008DB950 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Small.png; sourceTree = "<group>"; };
 		5B69808E38AE02FF0A4AD17F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B6980DF662100D485FEDD25 /* WebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponse.m; sourceTree = "<group>"; };
 		5B6980E6855FB4C5554DA68B /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 		5B698C1DD783F93C7B0934BD = {
 			isa = PBXGroup;
 			children = (
+				245EB024169CC6D1008DB950 /* iPhoneIcon_Small.png */,
+				245EB022169CC6CE008DB950 /* iPhoneIcon_Big.png */,
 				5B69898A6C30EB780DBB085A /* Products */,
 				5B698E7A50B5999EB06A0409 /* Frameworks */,
 				5B6988A3AC587450A770B9F4 /* VehicleInspections */,
@@ -316,6 +322,8 @@
 				5B69806EEB99AFA075C57DFB /* InfoPlist.strings in Resources */,
 				5B698F4DEC8A83B70850121B /* MainStoryboard_iPhone.storyboard in Resources */,
 				5B6985E331624DC73458CAC9 /* MainStoryboard_iPad.storyboard in Resources */,
+				245EB023169CC6CE008DB950 /* iPhoneIcon_Big.png in Resources */,
+				245EB025169CC6D1008DB950 /* iPhoneIcon_Small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +473,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = Synshistorik;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -520,6 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = Synshistorik;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -535,6 +545,7 @@
 				5B69858196B1C4A3882F1D43 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B69899C817247A8C9C3DF10 /* Build configuration list for PBXNativeTarget "VehicleInspections" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +554,7 @@
 				5B69809B9B1643DD10F9B961 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B698B8F34ACDBF68EE6DD98 /* Build configuration list for PBXProject "VehicleInspections" */ = {
 			isa = XCConfigurationList;
