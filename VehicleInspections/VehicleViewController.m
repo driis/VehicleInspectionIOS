@@ -9,9 +9,6 @@
 @end
 
 @implementation VehicleViewController
-{
-
-}
 
 @synthesize registrationNumber = _registrationNumber;
 @synthesize lookup = _lookup;
@@ -19,6 +16,9 @@
 @synthesize vinLabel = _vinLabel;
 @synthesize vehicle = _vehicl;
 @synthesize spinner = _spinner;
+@synthesize modelLabel = _modelLabel;
+@synthesize makeLabel = _makeLabel;
+@synthesize tableView = _tableView;
 
 - (void)viewDidLoad
 {
@@ -49,6 +49,8 @@
 {
     self.registrationLabel.text = self.vehicle.registrationNumber;
     self.vinLabel.text = self.vehicle.vin;
+    self.makeLabel.text = self.vehicle.make;
+    self.modelLabel.text = self.vehicle.model;
     if (self.spinner)
     {
         [self.spinner stopAnimating];

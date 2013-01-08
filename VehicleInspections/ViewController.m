@@ -44,6 +44,7 @@
 {
     [super viewDidAppear:animated];
     [self setSearchEnabledState:self.searchField];
+    [self.searchField becomeFirstResponder];
 }
 
 - (IBAction)registrationNumberChanged:(id)sender
