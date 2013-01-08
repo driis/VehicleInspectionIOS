@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "VehicleViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 
 @end
 
@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     self.title = @"Synsopslag";
+    self.searchField.delegate = self;
     [super viewDidLoad];
 }
 
@@ -63,5 +64,12 @@
     VehicleViewController* target = segue.destinationViewController;
     target.registrationNumber = registrationNumber;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self performSegueWithIdentifier:@"goToResult" sender:self];
+    return YES;
+}
+
 
 @end

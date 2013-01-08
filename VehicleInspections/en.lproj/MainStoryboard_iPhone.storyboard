@@ -37,7 +37,7 @@
                     <navigationItem key="navigationItem" id="tsG-Hm-Ndt">
                         <barButtonItem key="rightBarButtonItem" title="Søg" id="lYQ-Dc-Zxb">
                             <connections>
-                                <segue destination="i2t-2I-viA" kind="push" id="M42-qu-BYE"/>
+                                <segue destination="i2t-2I-viA" kind="push" identifier="goToResult" id="M42-qu-BYE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
