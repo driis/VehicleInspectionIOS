@@ -12,6 +12,8 @@
 		5B6981411ACF808559BA47C4 /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980DF662100D485FEDD25 /* WebResponse.m */; };
 		5B6981C71E67377829EB46B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B69855F31A9F3F18355EA77 /* Foundation.framework */; };
 		5B6981DBCA0E59B6D31984B2 /* VehicleLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69833383E7D1A241BF9927 /* VehicleLookup.m */; };
+		5B698349277CE8F4C73F22CB /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */; };
+		5B6983CE38C11B1C685C63B8 /* VehicleInspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6982834EECC53CDF274BDF /* VehicleInspection.m */; };
 		5B6983F34D90BA4D44D2C6A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698A037D57AFB76941B914 /* AppDelegate.m */; };
 		5B6983FC76530BC984825B4C /* VehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69859F2A0EEF023C1085AB /* VehicleViewController.m */; };
 		5B69844A2AEC3CC01450DF31 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69872911238812BC31F6BC /* TestHelper.m */; };
@@ -21,10 +23,12 @@
 		5B6985E331624DC73458CAC9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6980CF94FBFE2C89BD2C3D /* MainStoryboard_iPad.storyboard */; };
 		5B69868AD4AA882C19F5BB0C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B698E110F4BA2035CB6BC96 /* SenTestingKit.framework */; };
 		5B69882C9B375204DA74B124 /* VehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69859F2A0EEF023C1085AB /* VehicleViewController.m */; };
+		5B69885D7B30F0318CC3C5F6 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */; };
 		5B698972EE7FB84AD7480FFC /* VehicleLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69833383E7D1A241BF9927 /* VehicleLookup.m */; };
 		5B6989E20C60007FED54D620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69808E38AE02FF0A4AD17F /* main.m */; };
 		5B698ADD35C64514A40ADD48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6982043C24019FAE2A253B /* CoreGraphics.framework */; };
 		5B698BAAB6CC5FF398AC4629 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6984F69D7651E53847C99C /* UIKit.framework */; };
+		5B698BB79CF5A7682C0E3177 /* VehicleInspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6982834EECC53CDF274BDF /* VehicleInspection.m */; };
 		5B698C3C930D5BA919E6CB05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B6986F4EEBC99A88AD7E53E /* InfoPlist.strings */; };
 		5B698CA418B0D4DEF75EEC59 /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980DF662100D485FEDD25 /* WebResponse.m */; };
 		5B698CFCDE716E80B1098D8A /* WebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698CCFF358D01E858E39C6 /* WebRequest.m */; };
@@ -50,6 +54,7 @@
 		5B6980DF662100D485FEDD25 /* WebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponse.m; sourceTree = "<group>"; };
 		5B6980E6855FB4C5554DA68B /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		5B6982043C24019FAE2A253B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B6982834EECC53CDF274BDF /* VehicleInspection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleInspection.m; sourceTree = "<group>"; };
 		5B698296D46C8EDACD381CBE /* VehicleInspections-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspections-Info.plist"; sourceTree = "<group>"; };
 		5B69833383E7D1A241BF9927 /* VehicleLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleLookup.m; sourceTree = "<group>"; };
 		5B69833A8523E68C8B5DF4E0 /* VehicleLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleLookup.h; sourceTree = "<group>"; };
@@ -57,13 +62,16 @@
 		5B69855F31A9F3F18355EA77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B698569CDA220F208EE3236 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5B69859F2A0EEF023C1085AB /* VehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleViewController.m; sourceTree = "<group>"; };
+		5B6985C0B6602CE484694AE4 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
 		5B698667BA79F27ACA5F2BFA /* WebResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebResponse.h; sourceTree = "<group>"; };
+		5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		5B6986E6C28F90567CA020F2 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		5B698726D3C11E3C22AF1315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B69872911238812BC31F6BC /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		5B6987817BB3DFB677A3BC7C /* VehicleLookupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleLookupTests.m; sourceTree = "<group>"; };
 		5B698818DFDBA1D4E74EF45D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5B69883B93FF3AB87213D65F /* VehicleInspectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspectionsTests-Info.plist"; sourceTree = "<group>"; };
+		5B69884169F403F72D3E5BAC /* VehicleInspection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleInspection.h; sourceTree = "<group>"; };
 		5B6989090C6ACEDFF2C64669 /* VehicleInspectionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehicleInspectionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B698996A16AB659D876A808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B698A037D57AFB76941B914 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B698116B47100E930B2BC6D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5B6985C0B6602CE484694AE4 /* NSArray+Map.h */,
+				5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		5B6981A77E001523EE8F1403 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +180,7 @@
 				5B698DA85F754752C9DD65A9 /* VehicleViewController.h */,
 				5B6981A77E001523EE8F1403 /* Services */,
 				5B698F6431FB9F2854D3ECF0 /* Model */,
+				5B698116B47100E930B2BC6D /* Categories */,
 			);
 			path = VehicleInspections;
 			sourceTree = "<group>";
@@ -202,6 +220,8 @@
 			children = (
 				5B6986E6C28F90567CA020F2 /* Vehicle.m */,
 				5B698E787130648F48893F46 /* Vehicle.h */,
+				5B6982834EECC53CDF274BDF /* VehicleInspection.m */,
+				5B69884169F403F72D3E5BAC /* VehicleInspection.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +338,8 @@
 				5B698D8E3974B7DF3B6FBE71 /* Vehicle.m in Sources */,
 				5B69850D9249A1FE67684A44 /* WebRequest.m in Sources */,
 				5B6981411ACF808559BA47C4 /* WebResponse.m in Sources */,
+				5B698BB79CF5A7682C0E3177 /* VehicleInspection.m in Sources */,
+				5B698349277CE8F4C73F22CB /* NSArray+Map.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +355,8 @@
 				5B69853FDBA213B507D76A38 /* WebRequestTests.m in Sources */,
 				5B69844A2AEC3CC01450DF31 /* TestHelper.m in Sources */,
 				5B69804DEFC834736BF3E760 /* VehicleLookupTests.m in Sources */,
+				5B6983CE38C11B1C685C63B8 /* VehicleInspection.m in Sources */,
+				5B69885D7B30F0318CC3C5F6 /* NSArray+Map.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
