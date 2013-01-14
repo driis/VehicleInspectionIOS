@@ -16,6 +16,7 @@
 		5B6981D858F1DE6511810921 /* InspectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698BC0AD44906211D06D58 /* InspectionsTableViewController.m */; };
 		5B6981DBCA0E59B6D31984B2 /* VehicleLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69833383E7D1A241BF9927 /* VehicleLookup.m */; };
 		5B698349277CE8F4C73F22CB /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */; };
+		5B6983A55C14B40AC9D3E5C6 /* NSJsonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980025E747A56DBA8F301 /* NSJsonDeserializer.m */; };
 		5B6983CE38C11B1C685C63B8 /* VehicleInspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6982834EECC53CDF274BDF /* VehicleInspection.m */; };
 		5B6983F34D90BA4D44D2C6A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698A037D57AFB76941B914 /* AppDelegate.m */; };
 		5B6983FC76530BC984825B4C /* VehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69859F2A0EEF023C1085AB /* VehicleViewController.m */; };
@@ -25,10 +26,15 @@
 		5B69853FDBA213B507D76A38 /* WebRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698E6179AB8F5EB8857424 /* WebRequestTests.m */; };
 		5B6985E331624DC73458CAC9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6980CF94FBFE2C89BD2C3D /* MainStoryboard_iPad.storyboard */; };
 		5B69868AD4AA882C19F5BB0C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B698E110F4BA2035CB6BC96 /* SenTestingKit.framework */; };
+		5B6986972C67B111D3304733 /* JsonDynamicParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69841E638E745358C6797F /* JsonDynamicParserTests.m */; };
+		5B698781CEBEF7A0DD00B05F /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698194950E8AD4195293E8 /* Dummy.m */; };
 		5B69882C9B375204DA74B124 /* VehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69859F2A0EEF023C1085AB /* VehicleViewController.m */; };
 		5B69885D7B30F0318CC3C5F6 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */; };
+		5B69893929D7D807A24F6C40 /* NSJsonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980025E747A56DBA8F301 /* NSJsonDeserializer.m */; };
 		5B698972EE7FB84AD7480FFC /* VehicleLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69833383E7D1A241BF9927 /* VehicleLookup.m */; };
+		5B69898D6B117F8D87779C92 /* JsonDynamicParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698261E151F06D4A210622 /* JsonDynamicParser.m */; };
 		5B6989E20C60007FED54D620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69808E38AE02FF0A4AD17F /* main.m */; };
+		5B698A1B330067AF624B2BD4 /* JsonDynamicParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698261E151F06D4A210622 /* JsonDynamicParser.m */; };
 		5B698ADD35C64514A40ADD48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6982043C24019FAE2A253B /* CoreGraphics.framework */; };
 		5B698BAAB6CC5FF398AC4629 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6984F69D7651E53847C99C /* UIKit.framework */; };
 		5B698BB79CF5A7682C0E3177 /* VehicleInspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6982834EECC53CDF274BDF /* VehicleInspection.m */; };
@@ -58,20 +64,26 @@
 /* Begin PBXFileReference section */
 		245EB022169CC6CE008DB950 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Big.png; sourceTree = "<group>"; };
 		245EB024169CC6D1008DB950 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Small.png; sourceTree = "<group>"; };
+		5B6980025E747A56DBA8F301 /* NSJsonDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSJsonDeserializer.m; sourceTree = "<group>"; };
 		5B69808E38AE02FF0A4AD17F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B6980DF662100D485FEDD25 /* WebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponse.m; sourceTree = "<group>"; };
 		5B6980E6855FB4C5554DA68B /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		5B6981478CD5010859B81933 /* InspectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionsTableViewController.h; sourceTree = "<group>"; };
+		5B698194950E8AD4195293E8 /* Dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
 		5B6982043C24019FAE2A253B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B698261E151F06D4A210622 /* JsonDynamicParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDynamicParser.m; sourceTree = "<group>"; };
 		5B6982834EECC53CDF274BDF /* VehicleInspection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleInspection.m; sourceTree = "<group>"; };
 		5B698296D46C8EDACD381CBE /* VehicleInspections-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspections-Info.plist"; sourceTree = "<group>"; };
+		5B6982A32084D8F16CE42625 /* Dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dummy.h; sourceTree = "<group>"; };
 		5B69833383E7D1A241BF9927 /* VehicleLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleLookup.m; sourceTree = "<group>"; };
 		5B69833A8523E68C8B5DF4E0 /* VehicleLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleLookup.h; sourceTree = "<group>"; };
+		5B69841E638E745358C6797F /* JsonDynamicParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDynamicParserTests.m; sourceTree = "<group>"; };
 		5B6984F69D7651E53847C99C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5B69855F31A9F3F18355EA77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B698569CDA220F208EE3236 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5B69859F2A0EEF023C1085AB /* VehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleViewController.m; sourceTree = "<group>"; };
 		5B6985C0B6602CE484694AE4 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		5B6985E77E0B826712E6B2E9 /* NSJsonDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSJsonDeserializer.h; sourceTree = "<group>"; };
 		5B698667BA79F27ACA5F2BFA /* WebResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebResponse.h; sourceTree = "<group>"; };
 		5B69867651007BE1C0E554B5 /* InspectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionTableViewCell.h; sourceTree = "<group>"; };
 		5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
@@ -82,10 +94,12 @@
 		5B698818DFDBA1D4E74EF45D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5B69883B93FF3AB87213D65F /* VehicleInspectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspectionsTests-Info.plist"; sourceTree = "<group>"; };
 		5B69884169F403F72D3E5BAC /* VehicleInspection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleInspection.h; sourceTree = "<group>"; };
+		5B698882C024DCFBE86A0A1F /* JsonDynamicParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDynamicParser.h; sourceTree = "<group>"; };
 		5B6988863346458B71C1A124 /* InspectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionTableViewCell.m; sourceTree = "<group>"; };
 		5B6989090C6ACEDFF2C64669 /* VehicleInspectionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehicleInspectionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B698996A16AB659D876A808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B698A037D57AFB76941B914 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B698A130818281F34F66E40 /* JsonDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDeserializer.h; sourceTree = "<group>"; };
 		5B698ABF936FC7C62220B4EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5B698B38575EAF73ECD7BD4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B698B4401217D23CA551461 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -133,6 +147,18 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		5B6981A06CA64893E7A4366C /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				5B698261E151F06D4A210622 /* JsonDynamicParser.m */,
+				5B698882C024DCFBE86A0A1F /* JsonDynamicParser.h */,
+				5B698A130818281F34F66E40 /* JsonDeserializer.h */,
+				5B6980025E747A56DBA8F301 /* NSJsonDeserializer.m */,
+				5B6985E77E0B826712E6B2E9 /* NSJsonDeserializer.h */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
 		5B6981A77E001523EE8F1403 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +200,7 @@
 				5B69872911238812BC31F6BC /* TestHelper.m */,
 				5B6980E6855FB4C5554DA68B /* TestHelper.h */,
 				5B6987817BB3DFB677A3BC7C /* VehicleLookupTests.m */,
+				5B698FFA287574D79D4E4FA5 /* Json */,
 			);
 			path = VehicleInspectionsTests;
 			sourceTree = "<group>";
@@ -197,6 +224,7 @@
 				5B6981478CD5010859B81933 /* InspectionsTableViewController.h */,
 				5B6988863346458B71C1A124 /* InspectionTableViewCell.m */,
 				5B69867651007BE1C0E554B5 /* InspectionTableViewCell.h */,
+				5B6981A06CA64893E7A4366C /* Json */,
 			);
 			path = VehicleInspections;
 			sourceTree = "<group>";
@@ -242,6 +270,16 @@
 				5B69884169F403F72D3E5BAC /* VehicleInspection.h */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5B698FFA287574D79D4E4FA5 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				5B69841E638E745358C6797F /* JsonDynamicParserTests.m */,
+				5B698194950E8AD4195293E8 /* Dummy.m */,
+				5B6982A32084D8F16CE42625 /* Dummy.h */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +400,8 @@
 				5B698349277CE8F4C73F22CB /* NSArray+Map.m in Sources */,
 				5B698E921753ED262CC37883 /* InspectionsTableViewController.m in Sources */,
 				5B698C66F11A532D051240B6 /* InspectionTableViewCell.m in Sources */,
+				5B698A1B330067AF624B2BD4 /* JsonDynamicParser.m in Sources */,
+				5B69893929D7D807A24F6C40 /* NSJsonDeserializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +421,10 @@
 				5B69885D7B30F0318CC3C5F6 /* NSArray+Map.m in Sources */,
 				5B6981D858F1DE6511810921 /* InspectionsTableViewController.m in Sources */,
 				5B698CFFBDFCE53CD416AA80 /* InspectionTableViewCell.m in Sources */,
+				5B69898D6B117F8D87779C92 /* JsonDynamicParser.m in Sources */,
+				5B6983A55C14B40AC9D3E5C6 /* NSJsonDeserializer.m in Sources */,
+				5B6986972C67B111D3304733 /* JsonDynamicParserTests.m in Sources */,
+				5B698781CEBEF7A0DD00B05F /* Dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
