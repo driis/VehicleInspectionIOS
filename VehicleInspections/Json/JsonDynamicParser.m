@@ -1,4 +1,3 @@
-#import <Foundation/Foundation.h>
 #include <objc/runtime.h>
 #import "JsonDynamicParser.h"
 #import "JsonDeserializer.h"
@@ -29,30 +28,6 @@ id lookupImplementation(_JsonDynamicObject * self, SEL cmd)
     return self;
 }
 
-- (BOOL)respondsToSelector:(SEL)aSelector
-{
-    BOOL canRespond =
-            [self hasKeyForSelector:aSelector] ||
-            [self.inner respondsToSelector:aSelector] ||
-            [super respondsToSelector:aSelector];
-    return canRespond;
-}
-
-- (id)performSelector:(SEL)aSelector
-{
-    NSString *selectorName = NSStringFromSelector(aSelector);
-    id obj = [self.inner objectForKey:selectorName];
-    if (!obj && [self.inner respondsToSelector:aSelector])
-        return [self.inner performSelector:aSelector];
-    return [_JsonDynamicObject lookupToDynamicObject:obj];
-}
-
-- (BOOL)hasKeyForSelector:(SEL)aSelector
-{
-    NSString *selectorName = NSStringFromSelector(aSelector);
-    return [self.inner objectForKey:selectorName] != nil;
-}
-
 + (BOOL)resolveInstanceMethod:(SEL)sel
 {
     NSString *selectorName = NSStringFromSelector(sel);
@@ -67,7 +42,7 @@ id lookupImplementation(_JsonDynamicObject * self, SEL cmd)
 
 + (id)lookupToDynamicObject:(id)obj
 {
-    if ([obj isKindOfClass:[NSString class]])
+    if ([obj isKindOfClass:[NSString class]] || [obj isKindOfClass:[NSNumber class]])
         return obj;
     if ([obj isKindOfClass:[NSArray class]])
     {

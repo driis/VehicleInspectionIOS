@@ -27,7 +27,7 @@
 		5B6985E331624DC73458CAC9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6980CF94FBFE2C89BD2C3D /* MainStoryboard_iPad.storyboard */; };
 		5B69868AD4AA882C19F5BB0C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B698E110F4BA2035CB6BC96 /* SenTestingKit.framework */; };
 		5B6986972C67B111D3304733 /* JsonDynamicParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69841E638E745358C6797F /* JsonDynamicParserTests.m */; };
-		5B698781CEBEF7A0DD00B05F /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698194950E8AD4195293E8 /* Dummy.m */; };
+		5B698781CEBEF7A0DD00B05F /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B698194950E8AD4195293E8 /* Foo.m */; };
 		5B69882C9B375204DA74B124 /* VehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B69859F2A0EEF023C1085AB /* VehicleViewController.m */; };
 		5B69885D7B30F0318CC3C5F6 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6986885D9677BC49DF8EC4 /* NSArray+Map.m */; };
 		5B69893929D7D807A24F6C40 /* NSJsonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6980025E747A56DBA8F301 /* NSJsonDeserializer.m */; };
@@ -69,12 +69,12 @@
 		5B6980DF662100D485FEDD25 /* WebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponse.m; sourceTree = "<group>"; };
 		5B6980E6855FB4C5554DA68B /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		5B6981478CD5010859B81933 /* InspectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionsTableViewController.h; sourceTree = "<group>"; };
-		5B698194950E8AD4195293E8 /* Dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
+		5B698194950E8AD4195293E8 /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		5B6982043C24019FAE2A253B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5B698261E151F06D4A210622 /* JsonDynamicParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDynamicParser.m; sourceTree = "<group>"; };
 		5B6982834EECC53CDF274BDF /* VehicleInspection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleInspection.m; sourceTree = "<group>"; };
 		5B698296D46C8EDACD381CBE /* VehicleInspections-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "VehicleInspections-Info.plist"; sourceTree = "<group>"; };
-		5B6982A32084D8F16CE42625 /* Dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dummy.h; sourceTree = "<group>"; };
+		5B6982A32084D8F16CE42625 /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
 		5B69833383E7D1A241BF9927 /* VehicleLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleLookup.m; sourceTree = "<group>"; };
 		5B69833A8523E68C8B5DF4E0 /* VehicleLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleLookup.h; sourceTree = "<group>"; };
 		5B69841E638E745358C6797F /* JsonDynamicParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDynamicParserTests.m; sourceTree = "<group>"; };
@@ -276,8 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				5B69841E638E745358C6797F /* JsonDynamicParserTests.m */,
-				5B698194950E8AD4195293E8 /* Dummy.m */,
-				5B6982A32084D8F16CE42625 /* Dummy.h */,
+				5B698194950E8AD4195293E8 /* Foo.m */,
+				5B6982A32084D8F16CE42625 /* Foo.h */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 				5B69898D6B117F8D87779C92 /* JsonDynamicParser.m in Sources */,
 				5B6983A55C14B40AC9D3E5C6 /* NSJsonDeserializer.m in Sources */,
 				5B6986972C67B111D3304733 /* JsonDynamicParserTests.m in Sources */,
-				5B698781CEBEF7A0DD00B05F /* Dummy.m in Sources */,
+				5B698781CEBEF7A0DD00B05F /* Foo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

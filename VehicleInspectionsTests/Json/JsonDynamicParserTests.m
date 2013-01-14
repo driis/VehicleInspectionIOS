@@ -1,7 +1,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "NSJsonDeserializer.h"
 #import "JsonDynamicParser.h"
-#import "Dummy.h"
+#import "Foo.h"
 
 #define someJson @"{\"foo\":42,\"bar\":{\"fooBar\":\"interesting\"}}"
 
@@ -30,10 +30,14 @@
 
 - (void)testCanGetDynamicObject
 {
-    Dummy * data = [self.parser parseString:someJson];
+    Foo * data = [self.parser parseString:someJson];
 
     NSString * result = data.foo;
-    STAssertEqualObjects(@"42", result, @"Expected property was not forwarded correctly.");
+    Bar * bar = data.bar;
+    STAssertEqualObjects([NSNumber numberWithInt:42], result, @"Expected property was not forwarded correctly.");
+    STAssertNotNil(bar, @"bar property was nil");
+    STAssertNotNil(bar.fooBar, @"fooBar property was nil");
+    STAssertEqualObjects(@"interesting", bar.fooBar, @"fooBar property was not the expected string");
 }
 
 @end
